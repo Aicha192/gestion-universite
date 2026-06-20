@@ -1,0 +1,20 @@
+<h2>Gestion des Formations</h2>
+
+<div>
+  <input [(ngModel)]="newFormation.titre" placeholder="Titre">
+  <input [(ngModel)]="newFormation.description" placeholder="Description">
+
+  <button *ngIf="!isEdit" (click)="add()">Ajouter</button>
+  <button *ngIf="isEdit" (click)="update()">Modifier</button>
+</div>
+
+<hr>
+
+<ul>
+  <li *ngFor="let f of formations">
+    {{ f.titre }} - {{ f.description }}
+
+    <button (click)="edit(f)">Modifier</button>
+    <button (click)="delete(f.id)">Supprimer</button>
+  </li>
+</ul>

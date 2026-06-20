@@ -1,0 +1,14 @@
+POST http://localhost:8081/api/students
+Content-Type: application/json
+
+{
+  "ine": "SN001",
+  "nom": "Diop",
+  "prenom": "Moussa",
+  "dateNaissance": "2002-03-15",
+  "formation": "Informatique",
+  "promo": "L3",
+  "anneeDebut": 2022,
+  "anneeSortie": 2025,
+  "diplome": "Licence"
+}

@@ -1,0 +1,23 @@
+<h2>Gestion des Étudiants</h2>
+
+<!-- FORMULAIRE -->
+<div>
+  <input [(ngModel)]="newStudent.ine" placeholder="INE">
+  <input [(ngModel)]="newStudent.nom" placeholder="Nom">
+  <input [(ngModel)]="newStudent.prenom" placeholder="Prénom">
+
+  <button *ngIf="!isEdit" (click)="addStudent()">Ajouter</button>
+  <button *ngIf="isEdit" (click)="updateStudent()">Modifier</button>
+</div>
+
+<hr>
+
+<!-- LISTE -->
+<ul>
+  <li *ngFor="let s of students">
+    {{ s.ine }} - {{ s.nom }} - {{ s.prenom }}
+
+    <button (click)="editStudent(s)">Modifier</button>
+    <button (click)="deleteStudent(s.id)">Supprimer</button>
+  </li>
+</ul>

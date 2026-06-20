@@ -1,0 +1,18 @@
+### UPDATE TEST
+PUT http://localhost:8081/api/students/1
+Content-Type: application/json
+
+{
+  "ine": "SN002",
+  "nom": "Fall",
+  "prenom": "Awa",
+  "dateNaissance": "2001-01-10",
+  "formation": "Math",
+  "promo": "L2",
+  "anneeDebut": 2021,
+  "anneeSortie": 2024,
+  "diplome": "Licence"
+}
+
+### DELETE TEST
+DELETE http://localhost:8081/api/students/1

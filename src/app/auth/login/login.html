@@ -1,0 +1,11 @@
+<h2>Connexion</h2>
+
+<input type="email" [(ngModel)]="user.email" placeholder="Email">
+<br><br>
+
+<input type="password" [(ngModel)]="user.password" placeholder="Mot de passe">
+<br><br>
+
+<button (click)="login()">Se connecter</button>
+
+<p>{{ message }}</p>

@@ -1,0 +1,41 @@
+### REGISTER USER
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+
+{
+  "nom": "Admin",
+  "email": "admin@gmail.com",
+  "password": "admin123",
+  "role": "ADMIN"
+}
+
+### LOGIN USER
+POST http://localhost:8081/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin123"
+}
+
+### REGISTER PROF
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+
+{
+  "nom": "Professeur",
+  "email": "prof@gmail.com",
+  "password": "prof123",
+  "role": "ENSEIGNANT"
+}
+
+### REGISTER ETUDIANT
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+
+{
+  "nom": "Etudiant",
+  "email": "etudiant@gmail.com",
+  "password": "etu123",
+  "role": "ETUDIANT"
+}

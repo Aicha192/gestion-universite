@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div class="sidebar">
+
+    <h3>Admin Panel</h3>
+
+    <ul>
+      <li><a routerLink="/dashboard">📊 Dashboard</a></li>
+      <li><a routerLink="/students">👨‍🎓 Étudiants</a></li>
+      <li><a routerLink="/formations">📚 Formations</a></li>
+      <li><a routerLink="/formateurs">👨‍🏫 Formateurs</a></li>
+      <li><a routerLink="/communications">📢 Communications</a></li>
+    </ul>
+
+    <button (click)="logout()">🚪 Logout</button>
+
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

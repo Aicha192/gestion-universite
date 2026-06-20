@@ -1,0 +1,20 @@
+<h2>Gestion des Communications</h2>
+
+<div>
+  <input [(ngModel)]="newCommunication.titre" placeholder="Titre">
+  <input [(ngModel)]="newCommunication.message" placeholder="Message">
+
+  <button *ngIf="!isEdit" (click)="add()">Ajouter</button>
+  <button *ngIf="isEdit" (click)="update()">Modifier</button>
+</div>
+
+<hr>
+
+<ul>
+  <li *ngFor="let c of communications">
+    {{ c.titre }} - {{ c.message }}
+
+    <button (click)="edit(c)">Modifier</button>
+    <button (click)="delete(c.id)">Supprimer</button>
+  </li>
+</ul>

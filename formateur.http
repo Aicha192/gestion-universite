@@ -1,0 +1,13 @@
+### CREATE
+POST http://localhost:8081/api/formateurs
+Content-Type: application/json
+
+{
+  "nom": "Fall",
+  "email": "fall@gmail.com",
+  "specialite": "Math",
+  "type": "enseignant"
+}
+
+### GET ALL
+GET http://localhost:8081/api/formateurs

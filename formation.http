@@ -1,0 +1,16 @@
+### CREATE FORMATION
+POST http://localhost:8081/api/formations
+Content-Type: application/json
+
+{
+  "nomFormation": "Informatique",
+  "typeFormation": "Licence",
+  "niveau": "L3",
+  "dateDebut": "2024-01-10",
+  "dateFin": "2024-06-10",
+  "financement": "Etat",
+  "nombreEtudiants": 120
+}
+
+### GET ALL FORMATIONS
+GET http://localhost:8081/api/formations
