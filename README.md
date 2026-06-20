@@ -57,3 +57,17 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# Application de Gestion Universitaire
+
+Projet réalisé par : Aissatou Gaye  
+INE : N06152620202  
+Email : aissatou.gaye2@unchk.edu.sn
+
+## Lien GitHub
+https://github.com/Aicha192/gestion-universite
+
+## Technologies
+- Angular
+- Spring Boot
+- MySQL
